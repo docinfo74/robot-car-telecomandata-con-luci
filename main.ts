@@ -6,15 +6,15 @@ basic.showIcon(IconNames.Happy)
 radio.setGroup(100)
 basic.forever(function () {
     basic.showNumber(Motore)
-    if (Motore == 0) {
+    if (Motore == 1) {
         mbit_Robot.CarCtrlSpeed(mbit_Robot.CarState.Car_Back, 50)
-    } else if (Motore == 1) {
-        mbit_Robot.CarCtrlSpeed(mbit_Robot.CarState.Car_Run, 50)
     } else if (Motore == 2) {
-        mbit_Robot.CarCtrlSpeed(mbit_Robot.CarState.Car_Left, 50)
+        mbit_Robot.CarCtrlSpeed(mbit_Robot.CarState.Car_Run, 50)
     } else if (Motore == 3) {
-        mbit_Robot.CarCtrlSpeed(mbit_Robot.CarState.Car_Right, 50)
+        mbit_Robot.CarCtrlSpeed(mbit_Robot.CarState.Car_Left, 50)
     } else if (Motore == 4) {
+        mbit_Robot.CarCtrlSpeed(mbit_Robot.CarState.Car_Right, 50)
+    } else if (Motore == 5) {
         mbit_Robot.CarCtrlSpeed(mbit_Robot.CarState.Car_Stop, 50)
     } else {
         mbit_Robot.CarCtrlSpeed(mbit_Robot.CarState.Car_Stop, 50)
